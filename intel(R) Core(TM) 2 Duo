@@ -1,0 +1,12 @@
+apt update && apt upgrade -y
+apt install git
+apt install wget
+apt install proot
+git clone https://github.com/xmrig/xmrig
+cd xmrig
+mkdir build
+cd bulid  
+pkg intsall cmake
+cmake -DWITH_HWLOC=OFF ..
+make
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u DOGE:DLLQLM1iDQeLm9S6RyzLhLrhq1meKj2JB6.Waqas
